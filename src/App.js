@@ -1,6 +1,8 @@
+import Section from "./components/Section/Section";
+
 function App() {
   return (
-    <h1 className="title">Hello</h1>
+    <Section />
   );
 }
 
