@@ -1,0 +1,27 @@
+.root{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2rem;
+}
+
+@media only screen and ( min-width: 768px){
+    .root{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.btn{
+    cursor: pointer;
+    padding: 0.75rem 2rem;
+    border: solid 1px var(--clr-neutral-light);
+    color: var(--clr-neutral-light);
+    background-color: var(--clr-neutral-dark);
+    font-family: var(--ff-header);
+    font-weight: var(--fw-semi-bold);
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background-color: var(--clr-neutral-light);
+    color: var(--clr-neutral-dark);
+}

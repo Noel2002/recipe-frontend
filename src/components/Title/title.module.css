@@ -1,0 +1,24 @@
+.root{
+    display: flex;
+    margin-bottom: 40px;
+}
+.title{
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--fs-600);
+    font-family: var(--ff-header);
+    font-weight: var(--fw-semi-bold);
+}
+.line{
+    flex-grow: 1;
+    min-width: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.line > div{
+    height:1px;
+    background: #000;
+}

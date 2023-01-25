@@ -1,0 +1,31 @@
+.root{
+    display: grid;
+}
+
+@media only screen and (min-width: 992px) {
+    .root{
+        grid-template-columns:1fr 2fr;
+        gap: 2rem;
+    }
+    .video-wrapper{
+        grid-column-start: 2;
+    }
+    .video-description{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+}
+.btn{
+    font-family: var(--ff-header);
+    font-weight: var(--fw-semi-bold);
+    text-transform: capitalize;
+    color: var(--clr-neutral-dark);
+    background: var(--clr-neutral-light);
+    padding: 0.75rem 2rem;
+    border: none;
+}
+
+.btn:hover{
+    background-color: var(--clr-neutral-dark);
+    color: var(--clr-neutral-light);
+}

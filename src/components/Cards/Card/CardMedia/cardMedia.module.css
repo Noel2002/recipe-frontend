@@ -1,0 +1,31 @@
+.root >img{
+    width: 100%;
+}
+.root[aspectratio="portrait"] {
+    padding-top: 150%;
+    position: relative;
+}
+.root[aspectratio="landscape"] {
+    padding-top: 56.25%;
+    position: relative;
+}
+.root[aspectratio="common"] {
+    padding-top: 66.67%;
+    position: relative;
+}
+.root[aspectratio="square"] {
+    padding-top: 100%;
+    position: relative;
+}
+.root[aspectratio="portrait"] >img,
+.root[aspectratio="common"] >img,
+.root[aspectratio="landscape"] >img,
+.root[aspectratio="square"] >img
+
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
