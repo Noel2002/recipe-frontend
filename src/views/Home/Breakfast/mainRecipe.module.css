@@ -1,0 +1,9 @@
+.btn{
+    font-family: var(--ff-header);
+    font-weight: var(--fw-bold);
+    margin-top: 1rem;
+    background: transparent;
+    border: none;
+    text-decoration:underline;
+    text-transform: capitalize;
+}

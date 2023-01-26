@@ -1,0 +1,39 @@
+.ellipse{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+@media only screen and ( min-width: 992px){
+    .ellipse{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.ellipse >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.word{
+    text-align: center;
+}
+
+@media only screen and ( min-width: 768px){
+    .word{
+        width: 720px;
+        margin: 20px auto auto auto;
+    }
+}
+
+.name-tag{
+    font-family: var(--ff-body);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-400);
+    text-align: center;
+}
+

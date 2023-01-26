@@ -1,0 +1,8 @@
+.root{
+    display: inline-block;
+    /* width: fit-content; */
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-body);
+    font-size: 2rem;
+    text-transform: capitalize;    
+}

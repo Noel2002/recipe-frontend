@@ -1,0 +1,20 @@
+.root{
+    font-family: var(--ff-header);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-600);
+    line-height: 1;
+}
+
+.level-1{
+    font-size: var(--fs-800);
+}
+.level-2{
+    font-size: 1.3rem;
+    line-height: 1;
+}
+.level-3{
+    font-size: 1.125rem;
+}
+.level-4{
+    font-size: var(--fs-500);
+}

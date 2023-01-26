@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './styles.module.css';
 
-const Section = () => {
+const Section = (props) => {
   return (
-    <div className={styles.root}>
-      <div className={`container section ${styles.wrapper}`}>
-        dfgd
+    <div className={`${styles.root} ${props.className}`}>
+      <div className={`container section ${styles.wrapper} `}>
+        {props.children}
       </div>
     </div>
   )
