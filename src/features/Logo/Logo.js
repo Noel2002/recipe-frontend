@@ -4,7 +4,7 @@ import styles from './logo.module.css';
 const Logo = () => {
   return (
     <span className={`${styles.root}`}>
-        recipe
+        recipes
     </span>
   )
 }

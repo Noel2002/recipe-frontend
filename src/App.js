@@ -7,7 +7,16 @@ import SpecialRecipes from "./views/Home/SpecialRecipes/SpecialRecipes.js";
 
 function App() {
   return (
-    <Footer />    
+    <>
+      <LatestRecipes />
+      <ChefWord />
+      <BreakFastRecipes />
+      <FeaturedVideo />
+      <SpecialRecipes />
+      <Footer />
+    </>
+      
+  
   );
 }
 
