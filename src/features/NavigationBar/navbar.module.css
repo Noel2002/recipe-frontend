@@ -13,6 +13,8 @@
     background: var(--clr-overlay);
     top: 0;
     left: 0;
+    z-index: 99;
+
 }
 
 .links-list{

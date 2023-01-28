@@ -1,0 +1,14 @@
+.root{
+    font-family: var(--ff-body);
+    display: flex;
+    gap: 1rem;
+}
+.number-box{
+    font-weight: var(--fw-bold);
+}
+
+.instr-desc-box{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}

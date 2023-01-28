@@ -1,0 +1,17 @@
+.root{
+    font-family: var(--ff-header);
+    font-weight: var(--fw-bold);
+    font-size: 1.25rem;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.txt-left{
+    text-align: left;
+}
+.txt-center{
+    text-align: center;
+}
+.txt-right{
+    text-align: right;
+}
