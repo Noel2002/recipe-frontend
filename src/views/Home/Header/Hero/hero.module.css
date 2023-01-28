@@ -1,0 +1,27 @@
+.root{
+    /* background: #000; */
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar{
+    width: 100%;
+    padding: 1rem;
+    font-family:var(--ff-body);
+    border: none;
+    background: rgba(217, 217, 217, 0.8);
+}
+.search-bar:focus,
+.search-bar:focus-within
+{
+    outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .search-bar{
+        width: 700px;
+    }
+}
