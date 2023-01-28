@@ -1,0 +1,12 @@
+.root{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.ingridients-list{
+    font-family: var(--ff-body);
+}
+ul.ingridients-list{
+    list-style-position: inside;
+    padding-left: 10px;
+}

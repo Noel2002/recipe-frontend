@@ -1,17 +1,17 @@
 import React from 'react';
 import styles from './navbar.module.css';
-import Logo from '../../Logo/Logo';
+import Logo from '../Logo/Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
-const NavigationBar = () => {
+const NavigationBar = (props) => {
     const [isCollapse, setIsCollapse] = useState(false);
     const toggleCollapse = ()=>{
         setIsCollapse(!isCollapse);
     }
   return (
-    <nav className={`${styles.root}`}>
+    <nav className={`${styles.root} ${'clr-txt-' + props.theme}`}>
         <Logo />
         <div className={`${styles["links-wrapper"]} ${isCollapse?"":styles["hide"]}`}>
             <ul role={'list'} className={`${styles['links-list']}`}>

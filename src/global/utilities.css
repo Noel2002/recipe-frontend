@@ -114,3 +114,10 @@
     object-fit: cover;
     border: none;
 }
+
+.clr-txt-light{
+    color: var(--clr-neutral-dark);
+}
+.clr-txt-dark{
+    color: var(--clr-neutral-light);
+}
