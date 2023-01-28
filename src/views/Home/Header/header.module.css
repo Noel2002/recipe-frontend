@@ -1,0 +1,13 @@
+.root{
+    color:var(--clr-neutral-dark);
+    background: linear-gradient(0deg, rgba(89, 62, 29, 0.73), rgba(89, 62, 29, 0.73)), 
+                url("https://res.cloudinary.com/nowo-ltd/image/upload/v1674707635/recipes/NEFF_Featured_Choc_chip_cookies-1_ysi6fp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.header-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

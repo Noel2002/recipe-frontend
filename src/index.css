@@ -2,10 +2,14 @@
   --clr-primary-600: hsl(33, 20%, 44%);
   --clr-primary-400: hsl(35, 44%, 89%);
 
+
   --clr-secondary-900: hsl(0, 0%, 0%);
 
   --clr-neutral-light: hsl(0, 0%, 0%);
   --clr-neutral-dark: hsl(0, 0%, 100%);
+
+  --clr-overlay : rgba(0, 0, 0, 0.3);
+
 
   --ff-body: 'Montserrat', sans-serif;
   --ff-header: 'Roboto', sans-serif;

@@ -2,11 +2,18 @@
     /* background: red; */
     margin: auto;
     width: 100%;
+    /* Setting padding for smallest screens */
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 @media only screen and ( min-width: 576px){
     .container{
         width: 540px;
+
+        /* Removing the padding set for smallest screens */
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 @media only screen and ( min-width: 768px){
@@ -32,7 +39,8 @@
 
 
 .section{
-    padding: 2rem 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 @media only screen and ( min-width: 576px){
     .section{
@@ -48,6 +56,11 @@
     .section{
         padding: 6rem 0;
     }
+}
+
+.mini-section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .tag{
@@ -80,6 +93,10 @@
 }
 .pb-20{
     padding-bottom: 20px;
+}
+
+.pt-20{
+    padding-top: 20px;
 }
 
 .bg-primary-light{
