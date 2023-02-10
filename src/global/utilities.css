@@ -31,11 +31,11 @@
         width: 1140px;
     }
 }
-@media only screen and ( min-width: 1400px){
+/* @media only screen and ( min-width: 1400px){
     .container{
         width: 1320px;
     }
-}
+} */
 
 
 .section{
