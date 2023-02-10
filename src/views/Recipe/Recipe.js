@@ -9,8 +9,10 @@ import RecipeCard from '../../features/Recipes/RecipeCards/RecipeCard';
 import Title from '../../components/Title/Title';
 import Footer from '../../features/Footer/Footer';
 import NavigationBar from '../../features/NavigationBar/NavigationBar';
+import { breakfast, latest } from '../../data/dummyRecipes';
 
 const Recipe = () => {
+    const recipe = latest[0];
   return (
     <>
         <div className={`container mini-section`}>
@@ -20,21 +22,20 @@ const Recipe = () => {
         <Section>
             <div className={styles["recipe-header"]}>
                 <ArticleTitle align="center">
-                    Garlic Butter Chicken with Spinach and Bacon
+                    {recipe.name}
                 </ArticleTitle>
             </div>
             
             <div className={`${styles["recipe-wrapper"]}`}>
                 <div className={`${styles["main"]}`}>
                     <CardMedia aspectratio="common">
-                        <img src="https://res.cloudinary.com/nowo-ltd/image/upload/v1619865701/ARTISTA/back1_itcz7c.jpg" />
+                        <img src={recipe.cover} />
                     </CardMedia>
                     <p>
-                        Lorem ipsum dolor sit amet. Et molestiae voluptatibus aut laudantium error At earum ipsa. Qui consequuntur molestiae aut rerum perferendis aut iste eius qui dolore voluptas qui quia distinctio hic minus nobis sit quia tempora. A molestiae facilis et soluta vitae a reiciendis architecto hic repellat molestiae id praesentium amet id sapiente deserunt. Id atque nostrum et repellendus neque ea dolorem velit non aperiam rerum.
-                        <br /><br />Sit dolorem odio qui reiciendis similique vel placeat similique hic voluptas omnis aut possimus voluptates. Aut iure assumenda et veritatis enim qui consequatur sapiente aut quia voluptate vel voluptas tenetur est dolor beatae. Ad maiores dignissimos rem consequatur minima quo quasi dignissimos non quos adipisci et doloribus dolorem vel quia suscipit. Est vero ipsam ea quis harum hic ipsa enim.
+                       {recipe.description}
                     </p>
-                    <Ingridients />
-                    <Instructions />
+                    <Ingridients ingridients={recipe.ingridients} />
+                    <Instructions instructions={recipe.steps}/>
                 </div>
                 <div className={`${styles['aside']}`}>
                     <div className={`${styles["chef-box"]}`}>
@@ -56,9 +57,12 @@ const Recipe = () => {
                         <Title>
                             recommendations
                         </Title>
-                        <RecipeCard />
-                        <RecipeCard />
-                        <RecipeCard />
+                        {
+                            breakfast.slice(0,3).map((recipe) =>(
+                                <RecipeCard recipe={recipe} />
+                            ))
+                        }
+
                     </div>
                 </div>
             </div>

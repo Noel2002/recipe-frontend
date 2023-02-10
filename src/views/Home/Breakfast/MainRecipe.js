@@ -4,19 +4,20 @@ import Card from '../../../components/Cards/Card/Card'
 import CardMedia from '../../../components/Cards/Card/CardMedia/CardMedia'
 import CardContent from '../../../components/Cards/Card/CardContent/CardContent'
 import CardHeader from '../../../components/Cards/Card/CardHeader/CardHeader'
-const MainRecipe = () => {
+const MainRecipe = (props) => {
+  const recipe = props.recipe;
   return (
     <Card>
         <CardMedia aspectratio="common">
-            <img src="https://res.cloudinary.com/nowo-ltd/image/upload/v1619865701/ARTISTA/back1_itcz7c.jpg" />
+            <img src={recipe.cover} />
         </CardMedia>
         <CardContent>
-          <p className={`tag`}>breakfast | chinese</p>
+          <p className={`tag`}>{recipe.tags.join(" | ")}</p>
           <CardHeader level={1}>
-            Hong Kong Soy Sauce Pan-Fried Noodles
+            {recipe.name}
           </CardHeader>
           <p className={`paragraph mt-10`}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates recusandae tenetur nam doloribus quas laborum rem molestias! Porro, enim eveniet!
+            {`${recipe.description.slice(0, 200)} . . .`}
           </p>
         </CardContent>
         <button className={`${styles.btn}`}>
