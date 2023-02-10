@@ -11,7 +11,7 @@ const RecipeCard = (props) => {
       {recipe && (
         <>
           <CardMedia aspectratio="square">
-              <img src={recipe.cover} />
+              <img src={recipe.cover} alt="card cover"/>
           </CardMedia>
           <CardContent>
               <p className={`tag`}>{recipe.tags.join(" | ")}</p>

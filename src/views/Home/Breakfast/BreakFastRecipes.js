@@ -1,5 +1,4 @@
 import React from 'react'
-import Section from '../../../components/Section/Section'
 import MainRecipe from './MainRecipe';
 import AsideRecipes from './AsideRecipes'
 import styles from './breakfastRecipes.module.css'
@@ -12,7 +11,7 @@ const BreakFastRecipes = (props) => {
   const sideRecipes = recipes.slice(1,5);
   // console.log(sideRecipes);
   return (
-    <Section>
+    <div className={`mini-section`}>
       <Title>
         Breakfast Meals
       </Title>
@@ -20,7 +19,7 @@ const BreakFastRecipes = (props) => {
         <MainRecipe recipe={mainRecipe} />
         <AsideRecipes recipes={sideRecipes}/>
       </div>
-    </Section>
+    </div>
   )   
 }
 
