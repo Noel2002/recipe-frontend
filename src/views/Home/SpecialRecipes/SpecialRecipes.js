@@ -5,9 +5,9 @@ import styles from './specialRecipes.module.css'
 import Title from '../../../components/Title/Title'
 import { drinks } from '../../../data/dummyRecipes'
 const SpecialRecipes = () => {
-  const recipes = drinks;
+  const recipes = drinks.slice(0,4);
   return (
-    <Section>
+    <div className={`mini-section`}>
       <Title>Special Drinks</Title>
         <div className={`${styles.root}`}>
           {
@@ -16,7 +16,7 @@ const SpecialRecipes = () => {
             ))
           }
         </div>
-    </Section>
+    </div>
   )
 }
 

@@ -41,7 +41,7 @@ const Recipe = () => {
                     <div className={`${styles["chef-box"]}`}>
                         <center>
                             <div className={`${styles['avatar-holder']}`}>
-                                <img src="https://res.cloudinary.com/nowo-ltd/image/upload/v1619865701/ARTISTA/back1_itcz7c.jpg" />
+                                <img src="https://res.cloudinary.com/nowo-ltd/image/upload/v1619865701/ARTISTA/back1_itcz7c.jpg" alt="card cover"/>
                             </div>
                         </center>
                         <div className={`${styles['bio-box']}`}>
