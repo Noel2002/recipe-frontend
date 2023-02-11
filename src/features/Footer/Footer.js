@@ -4,8 +4,15 @@ import Section from '../../components/Section/Section';
 import Logo from '../Logo/Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    const socials_link = {
+        "instagram": "https://www.instagram.com/bnoel00/",
+        "twitter": "https://twitter.com/AimeBerwa",
+        "youtube": "https://www.youtube.com/",
+        "github": "https://github.com/Noel2002"
+    }
   return (
     <Section className="bg-primary-light">
         <div className={`${styles.root}`}>
@@ -18,10 +25,18 @@ const Footer = () => {
                     connect
                 </p>
                 <div className={`${styles.socials} mt-10`}>
-                    <FontAwesomeIcon icon={faYoutube} />
-                    <FontAwesomeIcon icon={faGithub} />
-                    <FontAwesomeIcon icon={faInstagram} />
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <a href={socials_link["youtube"]} target='_blank' rel="noreferrer">
+                        <FontAwesomeIcon icon={faYoutube} />
+                    </a>
+                    <a href={socials_link["github"]} target='_blank' rel="noreferrer">
+                        <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    <a href={socials_link["instagram"]} target='_blank' rel="noreferrer">
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                    <a href={socials_link["twitter"]} target='_blank' rel="noreferrer">
+                        <FontAwesomeIcon icon={faTwitter} />
+                    </a>
                 </div>
             </div>
             <div className={`${styles['footer-card']} pb-20`}>
@@ -29,11 +44,11 @@ const Footer = () => {
                     Quick links
                 </p>
                 <ul role='list' className={`${styles['footer-list']} mt-10`}>
-                    <li>Breakfast</li>
-                    <li>Dinner</li>
-                    <li>Vegetarian</li>
-                    <li>Drinks</li>
-                    <li>Videos</li>
+                    <Link to={"/breakfast"}><li>Breakfast</li></Link>
+                    <Link to={"/dinner"}><li>Dinner</li></Link>
+                    <Link to={"/drinks"}><li>drinks</li></Link>
+                    <Link to={"/vegetarian"}><li>Vegetarian</li></Link>
+                    <Link to={"/videos"}><li>Videos</li></Link>
                 </ul>
             </div>
             <div className={`${styles['footer-card']} pb-20`}>

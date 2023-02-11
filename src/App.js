@@ -1,32 +1,34 @@
-import Section from "./components/Section/Section.js";
-import Footer from "./features/Footer/Footer.js";
-import BreakFastRecipes from "./views/Home/Breakfast/BreakFastRecipes.js";
-import ChefWord from "./views/Home/ChefWord/ChefWord.js";
-import FeaturedVideo from "./views/Home/FeaturedVideo/FeaturedVideo.js";
-import Header from "./views/Home/Header/Header.js";
-import LatestRecipes from "./views/Home/Latest/LatestRecipes.js";
-import SpecialRecipes from "./views/Home/SpecialRecipes/SpecialRecipes.js";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home.js";
+import ViewRecipe from "./pages/ViewRecipe.js";
+import ScrollTop from "./components/ScrollTop/ScrollTop.js";
+import ContactsPage from "./pages/ContactsPage.js";
+import VegetarianPage from "./pages/VegetarianPage.js";
+import DrinksPage from "./pages/DrinksPage.js";
+import DinnerPage from "./pages/DinnerPage.js";
+import LunchPage from "./pages/LunchPage.js";
+import BreakFastPage from "./pages/BreakFastPage.js";
+import VideoPage from "./pages/VideoPage.js";
 
 function App() {
   return (
-    <>
-      {/* <Recipe /> */}
-      <Header />
-      <LatestRecipes />
-      <ChefWord />
-      <Section>
-        <BreakFastRecipes />
-        <SpecialRecipes />
-      </Section>
-      
-      <FeaturedVideo />
-      <Section>
-        <SpecialRecipes />
-        <BreakFastRecipes />
-      </Section>
-      
-      <Footer />
-    </>
+    <BrowserRouter>
+      <ScrollTop />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/recipe" element={<ViewRecipe />} />
+        <Route path="/breakfast" element={<BreakFastPage />} />
+        <Route path="/lunch" element={<LunchPage />} />
+        <Route path="/dinner" element={<DinnerPage />} />
+        <Route path="/drinks" element={<DrinksPage />} />
+        <Route path="/vegetarian" element={<VegetarianPage />} />
+        <Route path="/videos" element={<VideoPage />} />
+        <Route path="/contacts" element={<ContactsPage />} />
+
+
+
+      </Routes>
+    </BrowserRouter>
       
   
   );

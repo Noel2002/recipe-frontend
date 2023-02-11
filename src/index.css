@@ -111,6 +111,7 @@ button,
 a{
   cursor: pointer;
   text-decoration: none;
+  color: inherit;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
