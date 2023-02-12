@@ -57,11 +57,14 @@ const Recipe = () => {
                         <Title>
                             recommendations
                         </Title>
-                        {
-                            breakfast.slice(0,3).map((recipe) =>(
-                                <RecipeCard recipe={recipe} />
-                            ))
-                        }
+                        <div className={`${styles["rec-cards-wrapper"]}`}>
+                            {
+                                breakfast.slice(0,4).map((recipe) =>(
+                                    <RecipeCard recipe={recipe} />
+                                ))
+                            }
+                        </div>
+                        
 
                     </div>
                 </div>
