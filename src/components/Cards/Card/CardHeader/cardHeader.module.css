@@ -6,7 +6,12 @@
 }
 
 .level-1{
-    font-size: var(--fs-800);
+    font-size: 1.6rem;
+}
+@media only screen and (min-width:992px) {
+    .level-1{
+        font-size: var(--fs-800);
+    }
 }
 .level-2{
     font-size: 1.3rem;

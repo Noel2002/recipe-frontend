@@ -67,7 +67,12 @@
     font-family: var(--ff-body);
     font-weight: var(--fw-regular);
     text-transform: uppercase;
-    font-size: var(--fs-400);
+    font-size: var(--fs-100);
+}
+@media only screen and (min-width: 768px){
+    .tag{
+        font-size: var(--fs-400);
+    }
 }
 .lh-1{
     line-height: 1;
@@ -82,7 +87,12 @@
 .paragraph{
     font-family: var(--ff-body);
     font-weight: var(--fw-regular);
-    font-size: var(--fs-600);
+    font-size: var(--fs-500);
+}
+@media only screen and (min-width: 768px){
+    .paragraph{
+        font-size: var(--fs-600);
+    }
 }
 
 .mt-10{
