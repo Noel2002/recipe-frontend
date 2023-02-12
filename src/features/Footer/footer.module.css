@@ -16,17 +16,13 @@
 }
 @media only screen and ( min-width: 992px){
     .root{
-        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
         gap: 1rem;
     }
 }
-@media only screen and ( min-width: 1200px){
-    .root{
-        grid-template-columns: 2fr 1fr 1fr 1fr;
-        gap: 1rem;
-    }
+.contacts{
+    hyphens: auto;
 }
-
 .footer-card{
     text-align: center;
     border-bottom: solid 1px var(--clr-neutral-light);

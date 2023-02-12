@@ -66,7 +66,7 @@ const Footer = () => {
                 <p className={`${styles["footer-card-title"]} mt-20`}>
                     contacts
                 </p>
-                <ul role='list' className={`${styles['footer-list']} mt-10`}>
+                <ul role='list' className={`${styles['footer-list']} ${styles['contacts']} mt-10`}>
                     <li>(852) 000 000</li>
                     <li>123 Hung Toi, Hong Kong</li>
                     <li>123example@example@gmail.com</li>
