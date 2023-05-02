@@ -10,7 +10,9 @@ import LunchPage from "./pages/LunchPage.js";
 import BreakFastPage from "./pages/BreakFastPage.js";
 import VideoPage from "./pages/VideoPage.js";
 
+
 function App() {
+  console.log("App name:", process.env.REACT_APP_NAME);
   return (
     <BrowserRouter>
       <ScrollTop />
