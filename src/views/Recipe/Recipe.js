@@ -29,7 +29,7 @@ const Recipe = () => {
             <div className={`${styles["recipe-wrapper"]}`}>
                 <div className={`${styles["main"]}`}>
                     <CardMedia aspectratio="common">
-                        <img src={recipe.cover} />
+                        <img src={recipe.cover} alt={"Recipe cover image"}/>
                     </CardMedia>
                     <p>
                        {recipe.description}
