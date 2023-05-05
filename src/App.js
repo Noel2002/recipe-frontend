@@ -9,6 +9,7 @@ import DinnerPage from "./pages/DinnerPage.js";
 import LunchPage from "./pages/LunchPage.js";
 import BreakFastPage from "./pages/BreakFastPage.js";
 import VideoPage from "./pages/VideoPage.js";
+import CreateRecipe from "./pages/CreateRecipe.js";
 
 
 function App() {
@@ -26,9 +27,7 @@ function App() {
         <Route path="/vegetarian" element={<VegetarianPage />} />
         <Route path="/videos" element={<VideoPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
-
-
-
+        <Route path="/create" element={<CreateRecipe />} />
       </Routes>
     </BrowserRouter>
       
