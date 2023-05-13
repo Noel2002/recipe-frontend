@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './latestRecipes.module.css';
 import Section from "../../../components/Section/Section";
 import CardMedia from '../../../components/Cards/Card/CardMedia/CardMedia';
@@ -6,19 +6,27 @@ import CardContent from "../../../components/Cards/Card/CardContent/CardContent"
 import Card from "../../../components/Cards/Card/Card"
 import CardHeader from "../../../components/Cards/Card/CardHeader/CardHeader";
 import Title from "../../../components/Title/Title"
-import { latest } from '../../../data/dummyRecipes';
 import { Link } from 'react-router-dom';
+import { getLatestRecipes } from '../../../firebase/services/recipeService';
 
 const LatestRecipes = () => {
-  const recipes = latest;
+  const [recipes, setRecipes] = useState([]);
+  useEffect( ()=>{
+    const fetchRecipes = async ()=>{
+      const docs = await getLatestRecipes();
+      setRecipes(docs);
+    }
+    fetchRecipes()
+    
+  }, []);
   return (
     <Section >
       <Title>
         latest recipes
       </Title>
       <div className={`${styles.root}`}>
-        {recipes.map( (recipe)=>(
-          <Link to={"/recipe"}>
+        {recipes.length>0 && recipes.map( (recipe)=>(
+          <Link to={`recipe/${recipe.name}`}>
             <Card>
               <CardMedia aspectratio="portrait">
                 <img src={recipe.cover} alt='latest recipe cover'/>

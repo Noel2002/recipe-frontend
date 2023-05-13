@@ -4,7 +4,7 @@ import CardMedia from '../../../../components/Cards/Card/CardMedia/CardMedia';
 
 const Instruction = (props) => {
   const instruction = props.instruction;
-  console.log(instruction);
+  // console.log(instruction);
 
   return (
     <div className={`${styles.root}`}>

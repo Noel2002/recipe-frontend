@@ -3,8 +3,7 @@ import MainRecipe from './MainRecipe';
 import AsideRecipes from './AsideRecipes'
 import styles from './breakfastRecipes.module.css'
 import Title from '../../../components/Title/Title';
-import { collection, getDocs, query, where } from '@firebase/firestore';
-import { db } from '../../../firebase/config';
+import { getRecipesByCategory } from '../../../firebase/services/recipeService';
 
 const BreakFastRecipes = (props) => {
   const [recipes, setRecipes] = useState([])
@@ -13,13 +12,7 @@ const BreakFastRecipes = (props) => {
 
   useEffect( ()=>{
     const fetchRecipes = async ()=>{
-      const q = query(collection(db, "recipes"), where("category", "==", "breakfast"));
-      const snap = await getDocs(q);
-      const docs=[]
-      snap.forEach( doc => {
-        console.log(doc.data());
-        docs.push(doc.data())
-      });
+      const docs = await getRecipesByCategory("breakfast");
       setRecipes(docs);
     }
     fetchRecipes()
@@ -33,7 +26,7 @@ const BreakFastRecipes = (props) => {
       { recipes.length > 0 && 
       (<div className={`${styles.root}`}>
         <MainRecipe recipe={recipes[0]} />
-        <AsideRecipes recipes={recipes}/>
+        <AsideRecipes recipes={recipes.slice(1, 5)}/>
       </div>)}
     </div>
   )   

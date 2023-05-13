@@ -19,7 +19,7 @@ function App() {
       <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/recipe" element={<ViewRecipe />} />
+        <Route path="/recipe/:name" element={<ViewRecipe />} />
         <Route path="/breakfast" element={<BreakFastPage />} />
         <Route path="/lunch" element={<LunchPage />} />
         <Route path="/dinner" element={<DinnerPage />} />

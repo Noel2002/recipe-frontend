@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './recipe.module.css';
 import Section from '../../components/Section/Section';
 import ArticleTitle from './ArticleTitle/ArticleTitle';
@@ -9,11 +9,24 @@ import RecipeCard from '../../features/Recipes/RecipeCards/RecipeCard';
 import Title from '../../components/Title/Title';
 import Footer from '../../features/Footer/Footer';
 import NavigationBar from '../../features/NavigationBar/NavigationBar';
-import { breakfast, latest } from '../../data/dummyRecipes';
+import { breakfast } from '../../data/dummyRecipes';
+import { getRecipeByName } from '../../firebase/services/recipeService';
+import { useParams } from 'react-router-dom';
 
 const Recipe = () => {
-    const recipe = latest[0];
-  return (
+    const [recipe, setRecipe] = useState();
+    const {name} = useParams()
+    useEffect( ()=>{
+        const fetchRecipe = async ()=>{
+          const doc = await getRecipeByName(name);
+          setRecipe(doc);
+        }
+        fetchRecipe()
+        
+    }, [name]);
+
+  return recipe ? (
+
     <>
         <div className={`container mini-section`}>
             <NavigationBar theme='dark'/>
@@ -73,6 +86,9 @@ const Recipe = () => {
         <Footer />
     </>
     
+  ):
+  (
+    <></>
   )
 }
 
