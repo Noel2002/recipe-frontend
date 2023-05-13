@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const MainRecipe = (props) => {
   const recipe = props.recipe;
   return (
-    <Link to={"/recipe"}>
+    <Link to={`/recipe/${recipe.name}`}>
       <Card>
           <CardMedia aspectratio="common">
               <img src={recipe.cover} alt='main-card cover'/>

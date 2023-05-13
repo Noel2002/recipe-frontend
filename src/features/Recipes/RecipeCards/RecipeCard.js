@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const RecipeCard = (props) => {
   const {recipe} = props;
   return (
-    <Link to={"/recipe"}>
+    <Link to={`/recipe/${recipe.name}`}>
       <Card>
         {recipe && (
           <>

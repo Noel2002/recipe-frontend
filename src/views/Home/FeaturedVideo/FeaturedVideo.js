@@ -15,7 +15,7 @@ const FeaturedVideo = () => {
             <div className={`${styles["video-wrapper"]}`}>
                 <div className={`video-holder`}>
                     <iframe
-                        src={'https://www.youtube.com/embed/cP8SzRRRbqk'}
+                        src={'https://www.youtube.com/embed/pQrchxj2gC8'}
                         className={`video`}
                     ></iframe>  
                 </div>
