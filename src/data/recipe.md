@@ -1,22 +1,49 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis. Magna etiam tempor orci eu lobortis elementum. Fames ac turpis egestas maecenas pharetra convallis posuere morbi. Nullam ac tortor vitae purus faucibus ornare suspendisse. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Sed tempus urna et pharetra pharetra. Tortor dignissim convallis aenean et tortor at risus. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Urna et pharetra pharetra massa massa ultricies. Odio morbi quis commodo odio aenean sed adipiscing diam donec.
+These delicious chocolate chip cookies are a classic favorite. They are soft, chewy, and packed with gooey chocolate chips. Enjoy them with a glass of milk or share them with friends and family.
 
-### Ingridients
-- 8 slices bacon, halved
-- 7 eggs, divided
-- 2 tbsp. grated parmesan cheese
-- 2 tbsp. heavy cream
-- 1/4 tsp. kosher salt
-- 1/4 tsp. ground black pepper
-- 1 17.3-oz. box frozen puff pastry, thawed (2 sheets)
-- 1 c. shredded white cheddar cheese
-- 1 tbsp. everything bagel seasoning
+<section class="ingredients">
+
+### Ingredients
+- 1 cup unsalted butter, softened
+- 1 cup granulated sugar
+- 1 cup packed brown sugar
+- 2 large eggs
+- 1 teaspoon vanilla extract
+- 3 cups all-purpose flour
+- 1 teaspoon baking soda
+- 1/2 teaspoon salt
+- 2 cups chocolate chips
+
+</section>
+
+<section class="steps">
 
 ### Instructions
-1. Qui ipsa ratione ut quaerat incidunt vel placeat sint ab nostrum necessitatibus. Est mollitia vero non reiciendis repellat id blanditiis asperiores qui nemo similique rem veniam beatae et atque recusandae
-![Alt text](https://res.cloudinary.com/nowo-ltd/image/upload/v1674914210/recipes/6711176-the-perfect-chocolate-chip-cookie-Ella-Marie-4x3-1-8da322d8da584ea090bdcf9cac95e8ab_kgxqig.jpg)
+1. Preheat the oven to 375°F (190°C). Line a baking sheet with parchment paper.
+![Baking sheet lined with parchment paper](image1.jpg)
 
-2. Qui ipsa ratione ut quaerat incidunt vel placeat sint ab nostrum necessitatibus. Est mollitia vero non reiciendis repellat id blanditiis asperiores qui nemo similique rem veniam beatae et atque recusandae
-![Alt text](https://res.cloudinary.com/nowo-ltd/image/upload/v1674914210/recipes/6711176-the-perfect-chocolate-chip-cookie-Ella-Marie-4x3-1-8da322d8da584ea090bdcf9cac95e8ab_kgxqig.jpg)
+2. In a large mixing bowl, cream together the softened butter, granulated sugar, and brown sugar until light and fluffy.
+![Creaming together butter and sugars](image2.jpg)
 
-3. Qui ipsa ratione ut quaerat incidunt vel placeat sint ab nostrum necessitatibus. Est mollitia vero non reiciendis repellat id blanditiis asperiores qui nemo similique rem veniam beatae et atque recusandae
-![Alt text](https://res.cloudinary.com/nowo-ltd/image/upload/v1674914210/recipes/6711176-the-perfect-chocolate-chip-cookie-Ella-Marie-4x3-1-8da322d8da584ea090bdcf9cac95e8ab_kgxqig.jpg)
+3. Beat in the eggs one at a time, followed by the vanilla extract.
+![Adding eggs and vanilla extract](image3.jpg)
+
+4. In a separate bowl, whisk together the flour, baking soda, and salt. Gradually add the dry ingredients to the wet ingredients, mixing until just combined.
+![Combining dry and wet ingredients](image4.jpg)
+
+5. Stir in the chocolate chips until evenly distributed throughout the dough.
+![Adding chocolate chips to the dough](image5.jpg)
+
+6. Drop rounded tablespoons of dough onto the prepared baking sheet, spacing them about 2 inches apart.
+![Dropping dough onto baking sheet](image6.jpg)
+
+7. Bake in the preheated oven for 9 to 11 minutes, or until the edges are golden brown. The centers may still appear slightly undercooked.
+![Baking the cookies](image7.jpg)
+
+8. Remove from the oven and let the cookies cool on the baking sheet for 5 minutes. Then transfer them to a wire rack to cool completely.
+![Cooling the cookies on a wire rack](image8.jpg)
+
+9. Repeat steps 6 to 8 with the remaining dough until all the cookies are baked.
+
+10. Serve and enjoy these delicious homemade chocolate chip cookies!
+
+</section>

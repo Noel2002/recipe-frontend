@@ -1,27 +1,47 @@
-export const markdownRecipe = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis. Magna etiam tempor orci eu lobortis elementum. Fames ac turpis egestas maecenas pharetra convallis posuere morbi. Nullam ac tortor vitae purus faucibus ornare suspendisse. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Sed tempus urna et pharetra pharetra. Tortor dignissim convallis aenean et tortor at risus. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Urna et pharetra pharetra massa massa ultricies. Odio morbi quis commodo odio aenean sed adipiscing diam donec.
+export const markdownRecipe = `These delicious chocolate chip cookies are a classic favorite. They are soft, chewy, and packed with gooey chocolate chips. Enjoy them with a glass of milk or share them with friends and family.
 
-<section class="ingridients">
-### Ingridients
-- 8 slices bacon, halved
-- 7 eggs, divided
-- 2 tbsp. grated parmesan cheese
-- 2 tbsp. heavy cream
-- 1/4 tsp. kosher salt
-- 1/4 tsp. ground black pepper
-- 1 17.3-oz. box frozen puff pastry, thawed (2 sheets)
-- 1 c. shredded white cheddar cheese
-- 1 tbsp. everything bagel seasoning
+<section class="ingredients">
+
+### Ingredients
+- 1 cup unsalted butter, softened
+- 1 cup granulated sugar
+- 1 cup packed brown sugar
+- 2 large eggs
+- 1 teaspoon vanilla extract
+- 3 cups all-purpose flour
+- 1 teaspoon baking soda
+- 1/2 teaspoon salt
+- 2 cups chocolate chips
+
 </section>
 
 <section class="steps">
+
 ### Instructions
-1. Qui ipsa ratione ut quaerat incidunt vel placeat sint ab nostrum necessitatibus. Est mollitia vero non reiciendis repellat id blanditiis asperiores qui nemo similique rem veniam beatae et atque recusandae
-![Alt text](https://res.cloudinary.com/nowo-ltd/image/upload/v1674914210/recipes/6711176-the-perfect-chocolate-chip-cookie-Ella-Marie-4x3-1-8da322d8da584ea090bdcf9cac95e8ab_kgxqig.jpg)
+1. Preheat the oven to 375°F (190°C). Line a baking sheet with parchment paper.
+![Baking sheet lined with parchment paper](https://www.smokinjoesribranch.com/wp-content/uploads/2023/10/How-and-when-to-Preheat-your-Oven.jpg)
 
-2. Qui ipsa ratione ut quaerat incidunt vel placeat sint ab nostrum necessitatibus. Est mollitia vero non reiciendis repellat id blanditiis asperiores qui nemo similique rem veniam beatae et atque recusandae
-![Alt text](https://res.cloudinary.com/nowo-ltd/image/upload/v1674914210/recipes/6711176-the-perfect-chocolate-chip-cookie-Ella-Marie-4x3-1-8da322d8da584ea090bdcf9cac95e8ab_kgxqig.jpg)
+2. In a large mixing bowl, cream together the softened butter, granulated sugar, and brown sugar until light and fluffy.
+![Creaming together butter and sugars](https://media.istockphoto.com/id/175240339/photo/chef-making-muffins-batter.jpg?s=612x612&w=0&k=20&c=DKy-ZcEMkw7IYgS327_DZ3ol6L2hHJ3kXoOV7sIkdTQ=)
 
-3. Qui ipsa ratione ut quaerat incidunt vel placeat sint ab nostrum necessitatibus. Est mollitia vero non reiciendis repellat id blanditiis asperiores qui nemo similique rem veniam beatae et atque recusandae
-![Alt text](https://res.cloudinary.com/nowo-ltd/image/upload/v1674914210/recipes/6711176-the-perfect-chocolate-chip-cookie-Ella-Marie-4x3-1-8da322d8da584ea090bdcf9cac95e8ab_kgxqig.jpg)
+3. Beat in the eggs one at a time, followed by the vanilla extract.
+![Adding eggs and vanilla extract](https://www.mashed.com/img/gallery/youve-been-beating-eggs-wrong-this-whole-time/l-intro-1618833875.jpg)
+
+4. In a separate bowl, whisk together the flour, baking soda, and salt. Gradually add the dry ingredients to the wet ingredients, mixing until just combined.
+
+5. Stir in the chocolate chips until evenly distributed throughout the dough.
+
+6. Drop rounded tablespoons of dough onto the prepared baking sheet, spacing them about 2 inches apart.
+![Dropping dough onto baking sheet](https://www.thedailymeal.com/img/gallery/baking-cookies-on-a-silicone-mat-may-be-ruining-them/l-intro-1673014783.jpg)
+
+7. Bake in the preheated oven for 9 to 11 minutes, or until the edges are golden brown. The centers may still appear slightly undercooked.
+![Baking the cookies](https://media.istockphoto.com/id/93204335/photo/a-dozen-cookies-baking-in-the-oven.jpg?s=612x612&w=0&k=20&c=CTSOe4QpHdBbBzCHqH69wVNeaPeVRgU_nMZxwUILvbw=)
+
+8. Remove from the oven and let the cookies cool on the baking sheet for 5 minutes. Then transfer them to a wire rack to cool completely.
+
+9. Repeat steps 6 to 8 with the remaining dough until all the cookies are baked.
+
+10. Serve and enjoy these delicious homemade chocolate chip cookies!
+
 </section>
 `

@@ -1,4 +1,4 @@
-.steps, .ingridients{
+.steps, .ingredients{
     margin-top: 1.5rem;
     ol, ul {
         margin-left: 1.5rem;
@@ -19,5 +19,9 @@
 
 .steps li::marker{
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.steps img{
+    font-size: 0.75rem;
 }
