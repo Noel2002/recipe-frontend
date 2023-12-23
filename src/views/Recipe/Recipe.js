@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styles from './recipe.module.css';
+import mdStyles from './markdown.module.css';
 import Section from '../../components/Section/Section';
 import ArticleTitle from './ArticleTitle/ArticleTitle';
 import CardMedia from '../../components/Cards/Card/CardMedia/CardMedia';
-import Ingridients from './Ingridients/Ingridients';
-import Instructions from './Instructions/Instructions';
 import RecipeCard from '../../features/Recipes/RecipeCards/RecipeCard';
 import Title from '../../components/Title/Title';
 import Footer from '../../features/Footer/Footer';
@@ -48,6 +47,7 @@ const Recipe = () => {
                         <img src={recipe.cover} alt={"Recipe cover image"}/>
                     </CardMedia>
                     <Markdown
+                    className={mdStyles['markdown-article']}
                     options={{
                         overrides:{
                             h3: {
@@ -59,11 +59,6 @@ const Recipe = () => {
                     >
                         {markdownRecipe}
                     </Markdown>
-                    {/* <p>
-                       {recipe.description}
-                    </p>
-                    <Ingridients ingridients={recipe.ingridients} />
-                    <Instructions instructions={recipe.steps}/> */}
                 </div>
                 <div className={`${styles['aside']}`}>
                     <div className={`${styles["chef-box"]}`}>

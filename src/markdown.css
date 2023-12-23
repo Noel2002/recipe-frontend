@@ -1,0 +1,23 @@
+.steps, .ingridients{
+    margin-top: 1.5rem;
+    ol, ul {
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+    }
+}
+
+.steps ol{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.steps p{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.steps li::marker{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
