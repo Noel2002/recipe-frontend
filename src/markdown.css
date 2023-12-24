@@ -9,7 +9,7 @@
 .steps ol{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 .steps p{
     display: flex;
