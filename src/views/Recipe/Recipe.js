@@ -57,7 +57,7 @@ const Recipe = () => {
                     }
                     }       
                     >
-                        {markdownRecipe}
+                        {recipe.content.replaceAll('*****', "\n")}
                     </Markdown>
                 </div>
                 <div className={`${styles['aside']}`}>
