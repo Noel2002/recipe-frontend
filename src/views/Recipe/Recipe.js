@@ -61,7 +61,7 @@ const Recipe = () => {
                     </Markdown>
                 </div>
                 <div className={`${styles['aside']}`}>
-                    <div className={`${styles["chef-box"]}`}>
+                    {/* <div className={`${styles["chef-box"]}`}>
                         <center>
                             <div className={`${styles['avatar-holder']}`}>
                                 <img src="https://res.cloudinary.com/nowo-ltd/image/upload/v1619865701/ARTISTA/back1_itcz7c.jpg" alt="card cover"/>
@@ -75,7 +75,7 @@ const Recipe = () => {
                                 Lorem ipsum dolor sit amet. Ab cumque minima et maxime magnam ut ipsam sunt. Ut accusamus tempora ea sint corrupti sit voluptas omnis. Ut perspiciatis nemo est dolorum fugit eos totam fugiat.
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className={`${styles["rec-wrapper"]}`}>
                         <Title>
                             recommendations
