@@ -12,8 +12,6 @@ import { breakfast } from '../../data/dummyRecipes';
 import { getRecipeByName } from '../../firebase/services/recipeService';
 import { useParams } from 'react-router-dom';
 import Markdown from 'markdown-to-jsx';
-import { markdownRecipe } from '../../data/markdownRecipe';
-import SubTitle from './SubTitle/SubTitle';
 
 const Recipe = () => {
     const [recipe, setRecipe] = useState();
@@ -51,7 +49,9 @@ const Recipe = () => {
                     options={{
                         overrides:{
                             h3: {
-                                component: SubTitle
+                                props:{
+                                    className: "subtitle"
+                                }
                             }
                         }
                     }
