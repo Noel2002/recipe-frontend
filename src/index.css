@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
   --clr-primary-600: hsl(33, 20%, 44%);
   --clr-primary-400: hsl(35, 44%, 89%);
