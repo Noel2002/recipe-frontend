@@ -5,13 +5,15 @@ import Section from '../Section/Section'
 
 const PageWrapper = (props) => {
   return (
-     <div>
+     <div className=' min-h-screen flex flex-col'>
         <div className={`container mini-section`}>
             <NavigationBar theme='dark' />            
         </div>
-        <Section>
-            {props.children}
-        </Section>
+        <div className='flex-grow'>
+          <Section>
+              {props.children}
+          </Section>
+        </div>
         <Footer />
     </div>
   )
