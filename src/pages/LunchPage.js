@@ -6,7 +6,7 @@ import RecipeCard from '../features/Recipes/RecipeCards/RecipeCard';
 
 const LunchPage = () => {
   // Note: The category 'breakfast' is used here, but you can change it to 'lunch' or any other category as needed.
-  const {recipes, loading, error} = useFetchRecipesByCategory('breakfast');
+  const {recipes, loading, error} = useFetchRecipesByCategory('lunch');
   if (loading) {
     return <div>Loading...</div>
   }

@@ -13,7 +13,7 @@ const CreatePage = () => {
         category: "breakfast",
         date: "",
         cover: "",
-        tag: [],
+        tags: [],
         content: "",
         description: ""
     });
@@ -38,11 +38,11 @@ const CreatePage = () => {
         setRecipe((prev) => ({ ...prev, cover }));
     }
     const addTag = () => {
-        setRecipe((prev) => ({ ...prev, tag: [...prev.tag, currentTag] }));
+        setRecipe((prev) => ({ ...prev, tags: [...prev.tags, currentTag] }));
         setCurrentTag("");
     }
     const removeTag = (tag) => {
-        setRecipe((prev) => ({ ...prev, tag: prev.tag.filter(t => t !== tag) }));
+        setRecipe((prev) => ({ ...prev, tags: prev.tags.filter(t => t !== tag) }));
     }
 
     const setContent = (content) => {
@@ -169,9 +169,9 @@ const CreatePage = () => {
                         </button>
                     </div>       
                     <div>
-                        {recipe.tag.length > 0 && (
+                        {recipe.tags.length > 0 && (
                             <div className=' flex gap-2 flex-wrap'>
-                                {recipe.tag.map((tag, index) => (
+                                {recipe.tags.map((tag, index) => (
                                     <span 
                                         key={index} 
                                         className=' bg-blue-200 px-3 py-1 rounded-md text-sm'
