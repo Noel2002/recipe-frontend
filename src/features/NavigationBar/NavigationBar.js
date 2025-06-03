@@ -15,7 +15,7 @@ const NavigationBar = (props) => {
     <nav className={`${styles.root} ${'clr-txt-' + props.theme}`}>
         <Link to={"/"}> <Logo /> </Link>
         <div className={`${styles["links-wrapper"]} ${isCollapse?"":styles["hide"]}`}>
-            <ul role={'list'} className={`${styles['links-list']}`}>
+            <ul role={'list'} className={`${styles['links-list']} list-none`}>
 
                 <span 
                     className={`${styles["nav-icon"]}`} 

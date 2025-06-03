@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  ul, ol {
+    list-style: revert;
+    margin: revert;
+    padding: revert;
+  }
+}
+
 :root{
   --clr-primary-600: hsl(33, 20%, 44%);
   --clr-primary-400: hsl(35, 44%, 89%);
@@ -76,10 +84,10 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
+/* ul[role="list"],
 ol[role="list"] {
   list-style: none;
-}
+} */
 
 /* Set core root defaults */
 html:focus-within {

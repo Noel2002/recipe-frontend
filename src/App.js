@@ -11,6 +11,7 @@ import BreakFastPage from "./pages/BreakFastPage.js";
 import VideoPage from "./pages/VideoPage.js";
 import CreateRecipe from "./pages/CreateRecipe.js";
 import StringFormatter from "./pages/StringFormatter.js";
+import CreatePage from "./pages/CreatePage.js";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="/create" element={<CreateRecipe />} />
         <Route path="/formatter" element={<StringFormatter />} />
+        <Route path="/new" element={<CreatePage />} />
       </Routes>
     </BrowserRouter>
       

@@ -1,5 +1,5 @@
 import { db } from "../config";
-import { collection, getDocs, query, where } from '@firebase/firestore';
+import { collection, getDocs, query, where, addDoc } from '@firebase/firestore';
 
 
 export const getBreakfastRecipes = async () =>{
@@ -42,4 +42,15 @@ export const getRecipeByName = async(recipeName)=>{
         docs.push(doc.data())
     });
     return docs? docs[0] : undefined;
+}
+
+export const addRecipe = async(recipe) => {
+    const q = query(collection(db, "recipes"), where("name", "==", recipe.name));
+    const snap = await getDocs(q);
+    if(snap.empty){
+        const docRef = await addDoc(collection(db, "recipes"), recipe);
+        return docRef.id;
+    } else {
+        throw new Error("Recipe with this name already exists");
+    }
 }

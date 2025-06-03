@@ -43,7 +43,7 @@ const Footer = () => {
                 <p className={`${styles["footer-card-title"]} mt-20`}>
                     Quick links
                 </p>
-                <ul role='list' className={`${styles['footer-list']} mt-10`}>
+                <ul role='list' className={`${styles['footer-list']} mt-10 list-none px-0`}>
                     <Link to={"/breakfast"}><li>Breakfast</li></Link>
                     <Link to={"/dinner"}><li>Dinner</li></Link>
                     <Link to={"/drinks"}><li>drinks</li></Link>
@@ -51,22 +51,22 @@ const Footer = () => {
                     <Link to={"/videos"}><li>Videos</li></Link>
                 </ul>
             </div>
-            <div className={`${styles['footer-card']} pb-20`}>
+            {/* <div className={`${styles['footer-card']} pb-20`}>
                 <p className={`${styles["footer-card-title"]} mt-20`}>
                     company
                 </p>
-                <ul role='list' className={`${styles['footer-list']} mt-10`}>
+                <ul role='list' className={`${styles['footer-list']} mt-10 list-none px-0`}>
                     <li>Privacy Policy</li>
                     <li>Our story</li>
                     <li>Team</li>
                     <li>Contact</li>
                 </ul>
-            </div>
+            </div> */}
             <div className={`${styles['footer-card']} pb-20`}>
                 <p className={`${styles["footer-card-title"]} mt-20`}>
                     contacts
                 </p>
-                <ul role='list' className={`${styles['footer-list']} ${styles['contacts']} mt-10`}>
+                <ul role='list' className={`mt-10 list-none px-0 font-montserrat`}>
                     <li>(852) 000 000</li>
                     <li>123 Hung Toi, Hong Kong</li>
                     <li>123example@example@gmail.com</li>
