@@ -13,23 +13,31 @@ const LunchPage = () => {
   if (error) {
     return <div>Error: {error}</div>
   }
-  if (recipes.length === 0) {
-    return <div>No recipes found</div>
-  }
 
   const mainRecipe = recipes[0];
   console.log('LunchPage recipes:', recipes);
   
   return (
     <PageWrapper>
-      <MainRecipe recipe={mainRecipe} />
-      <div className=' grid grid-cols-2 md:grid-cols-3  gap-4'>
-        {
-          recipes.slice(1).map((recipe) => (
-            <RecipeCard key={recipe.name} recipe={recipe} />
-          ))
-        }
-      </div>
+      {
+        recipes.length == 0 ? (
+          <h1 className='text-2xl font-bold mb-4'>No lunch recipes found</h1>
+        )
+        :
+        (
+          <>
+            <MainRecipe recipe={mainRecipe} />
+            <div className=' grid grid-cols-2 md:grid-cols-3  gap-4'>
+              {
+                recipes.slice(1).map((recipe) => (
+                  <RecipeCard key={recipe.name} recipe={recipe} />
+                ))
+              }
+            </div>
+          </>
+
+        )
+      }
     </PageWrapper>
   )
 }
